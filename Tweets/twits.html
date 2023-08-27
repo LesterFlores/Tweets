@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWITS</title>
+    <link rel="stylesheet" href="twits.css">
+    <script src="twits.js"></script>
+</head>
+<body onload="displaytime()">
+    <header><h1>UNIVERSIDAD MARIANO GALVEZ | RETO DE LA CLASE</h1></header>
+    <div class="pantalla">
+        <div class="morado">
+            
+        </div>
+        <div class="blanco">
+            
+        </div>
+        <div class="centro">
+            <fieldset>
+                <p id="demo"></p>
+                <h1 style="text-align: center;">Tweet</h1>
+                <h2 style="margin-left: 200px;"> Que esta pensando?</h2>
+                <br>    
+                    <b style="margin-left: 20px;">Nombre:</b><input id="nombres" style="margin-left:20px; border-radius: 5px; border: solid rgb(41, 36, 36); width: 383px;" type="text"><br><br>
+                    <b style="margin-left: 20px;">Mensaje:</b><br><textarea id="mensajes" cols="50" rows="4" style="margin-left: 100px; border-radius: 5px;border: solid rgb(41, 36, 36); margin-top: -15px;"></textarea><br><br>
+                    <button id="btn_agregar" onclick="agregar_texto()" style="margin-left: 245px; width: 120px; height: 40px; font-weight: bold; background-color: blueviolet; border-radius: 10px;">Agregar Texto</button>
+                <br><br>
+
+                <table border="1" title="TWISTS">
+                    <caption>TWISTS</caption>
+                    <thead>
+                            <tr>
+                                <td><strong>No</strong></td>
+                                <td><strong>Nombre</strong></td>
+                                <td><strong>Mensaje</strong></td>
+                                <td></td>
+                            </tr>
+                    </thead>
+                    <tbody id="tabla">
+                        
+                    </tbody>
+                </table>
+            </fieldset>
+        </div>
+    </div>
+    
+</body>
+</html>
